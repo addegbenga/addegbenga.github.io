@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: cursive;
+}
+
+nav {
+    height: 10vh;
+    background: #5b78c7;
+}
+
+.nav-links {
+    display: flex;
+    background: coral;
+    width: 100%;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.nav-links .li {
+    list-style: none;
+}
+
+
+/*.right {
+    margin-left: 15%;
+}
+
+.left {
+    margin-left: 5%;
+}*/
+
+.nav-links .li .a {
+    text-decoration: none;
+    color: white;
+}
+
+.drop-container {
+    height: 40vh;
+    width: 10%;
+    padding-left: 10px;
+    position: absolute;
+}
+
+.drop1 {
+    color: aqua;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+}
+
+
+/*.drops {
+    display: flex;
+    flex-direction: column;
+    background: red;
+    height: 40vh;
+}*/
+
+.drops {
+    display: flex;
+    flex-direction: column;
+    background: coral;
+    height: 40vh;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    right: 30%;
+    top: 7%;
+    transform: translate(-5%, 0%);
+    /*clip-path: circle(100px at 80% -10%);*/
+    /*clip-path: inset();*/
+    clip-path: circle(100px at 80% -50%);
+    transition: all 0.4s ease;
+}
+
+.open {
+    clip-path: circle(1000px at 80% -10%);
+    pointer-events: all;
+}
